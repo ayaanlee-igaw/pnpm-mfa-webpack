@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div>
-      <router-link to="/test">Test</router-link>
+      <router-link to="/test">Remote Test Page</router-link>
       <p>remote hellow world component logo</p>
       <img alt="Vue logo" src="../assets/logo.png">
     </div>
