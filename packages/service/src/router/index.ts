@@ -1,4 +1,9 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import {
+  createRouter,
+  createWebHashHistory,
+  createWebHistory,
+  RouteRecordRaw,
+} from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 
 const routes: Array<RouteRecordRaw> = [
@@ -15,10 +20,16 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
   },
+  {
+    path: '/test',
+    name: 'test',
+    component: () => import(/* webpackChunkName: "about" */ '../views/TestView.vue'),
+  },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
+  // history: createWebHashHistory(),
   routes,
 });
 

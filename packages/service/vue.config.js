@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service');
-const webpack = require('webpack');
+const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = defineConfig({
   pages: {
@@ -30,7 +30,7 @@ module.exports = defineConfig({
       },
     },
     plugins: [
-      new webpack.container.ModuleFederationPlugin({
+      new ModuleFederationPlugin({
         name: 'service',
         filename: 'remoteEntry.js',
         exposes: {
