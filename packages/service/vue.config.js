@@ -42,15 +42,15 @@ module.exports = defineConfig({
           vue: {
             singleton: true,
           },
-          vuex: {
-            singleton: true,
-          },
-          'vue-router': {
-            singleton: true,
-          },
-          'core-js': {
-            singleton: true,
-          },
+          // vuex: {
+          //   singleton: true,
+          // },
+          // 'vue-router': {
+          //   singleton: true,
+          // },
+          // 'core-js': {
+          //   singleton: true,
+          // },
         },
       }),
     ],

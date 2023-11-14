@@ -12,5 +12,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // allow Module Federation
     'import/no-unresolved': [2, { ignore: ['^service/.*$'] }],
+    'linebreak-style': 0,
   },
 };
