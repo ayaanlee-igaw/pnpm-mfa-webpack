@@ -13,5 +13,6 @@ module.exports = {
     // allow Module Federation
     'import/no-unresolved': [2, { ignore: ['^service/.*$'] }],
     'linebreak-style': 0,
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
 };

@@ -1,5 +1,5 @@
 <template>
   <div class="test">
-    <h1>Test page</h1>
+    <h1>Remote Sign Up Page</h1>
   </div>
 </template>

@@ -34,9 +34,7 @@ module.exports = defineConfig({
         name: 'service',
         filename: 'remoteEntry.js',
         exposes: {
-          './HelloWorld.vue': './src/components/HelloWorld.vue',
-          './AboutView.vue': './src/views/AboutView.vue',
-          // './App.vue': './src/App.vue',
+          './router': './src/router/index.ts',
         },
         shared: {
           vue: {
